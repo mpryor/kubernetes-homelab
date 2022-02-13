@@ -1,6 +1,11 @@
 Vagrant.configure("2") do |config|
-  config.vm.box = "rockylinux/8"
+  config.vm.box = "ubuntu/bionic64"
   config.vm.network :public_network, bridge: "Intel(R) Wireless-AC 9560 160MHz"
+
+  config.vm.provider "virtualbox" do |v|
+    v.memory = 2048
+    v.cpus = 1
+  end
 
   config.vm.define "control-node" do |control|
     control.vm.hostname = "control-node"
