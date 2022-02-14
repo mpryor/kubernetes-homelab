@@ -1,3 +1,8 @@
+while ! ip route | grep 192 >/dev/null; do 
+	echo "Waiting for IP assignment from DHCP..."; 
+	sleep 1; 
+done &
+
 MY_IP=$(ip addr show | grep -i 192 | awk '{print $2}' | sed "s/\/24//g") 
 
 CONTROL_IP="$(cat /vagrant/control-ip):6443"

@@ -1,3 +1,8 @@
+while ! ip route | grep 192 >/dev/null; do 
+	echo "Waiting for IP assignment from DHCP..."; 
+	sleep 1; 
+done &
+
 # Assuming user has bridged their VM to a network like 192.168.*
 MY_IP=$(ip addr show | grep -i 192 | awk '{print $2}' | sed "s/\/24//g") 
 
