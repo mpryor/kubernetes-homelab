@@ -15,12 +15,14 @@ Vagrant.configure("2") do |config|
     control.vm.provision "shell", path: "control.sh"
   end
 
-  config.vm.define "worker-node" do |worker|
-    worker.vm.hostname = "worker-node"
-    worker.vm.provider "virtualbox" do |vb|
-      vb.name = "worker-node"
-    end    
-    worker.vm.provision "shell", path: "worker.sh"
+  (1..2).each do |number|
+    config.vm.define "worker-node-#{number}" do |worker|
+      worker.vm.hostname = "worker-node-#{number}"
+      worker.vm.provider "virtualbox" do |vb|
+        vb.name = "worker-node-#{number}"
+      end    
+      worker.vm.provision "shell", path: "worker.sh"
+    end
   end
 
 end

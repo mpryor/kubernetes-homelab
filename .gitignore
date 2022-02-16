@@ -1,3 +1,4 @@
+*.log
 .vagrant
 control-ip
 node-token
