@@ -6,6 +6,8 @@ Homelab automation for a K8s environment - fully virtualized and automated with 
 # Features
 - [ ] ArgoCD 
 - [ ] Kubernetes Dashboard
+- [ ] Operator Lifecycle Manager
+- [ ] Log aggregation
 - [ ] Auth to Dash with Oauth/SSO
   - [ ] Dex/Authentik?
   - [ ] Kube oauth proxy
