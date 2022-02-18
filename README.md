@@ -12,6 +12,8 @@ Homelab automation for a K8s environment - fully virtualized and automated with 
   - [ ] Connect to app of apps repo (this repo)
 - [ ] Determine consistent routing pattern for apps installed via ArgoCD
 - [ ] DNS / SSL cert handling
+  - [ ] Get trusted SSL certs for local DNS domain
+  - [ ] Secure storage of SSL private key  
 - [ ] Kubernetes Dashboard
 - [ ] Operator Lifecycle Manager
 - [ ] Log aggregation
