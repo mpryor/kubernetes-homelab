@@ -17,6 +17,8 @@ Homelab automation for a K8s environment - fully virtualized and automated with 
 - [ ] Kubernetes Dashboard
 - [ ] Operator Lifecycle Manager
 - [ ] Log aggregation
+  - [ ] Fluent bit
+  - [ ] ELK? Loki? 
 - [ ] Auth to Dash with Oauth/SSO
   - [ ] Dex/Authentik?
   - [ ] Kube oauth proxy
