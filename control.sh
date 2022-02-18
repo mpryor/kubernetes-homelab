@@ -14,3 +14,4 @@ curl -sfL https://get.k3s.io | INSTALL_K3S_EXEC="--node-ip $MY_IP --flannel-ifac
 
 # Copying server token to shared directory to be used by worker nodes
 cp /var/lib/rancher/k3s/server/node-token /vagrant
+cp /etc/rancher/k3s/k3s.yaml /vagrant
