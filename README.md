@@ -4,7 +4,10 @@ Homelab automation for a K8s environment - fully virtualized and automated with 
 
 
 # Features
-- [ ] ArgoCD 
+- [x] ArgoCD 
+  - [ ] SSO / OIDC
+- [ ] Determine consistent routing pattern for apps installed via ArgoCD
+- [ ] DNS / SSL cert handling
 - [ ] Kubernetes Dashboard
 - [ ] Operator Lifecycle Manager
 - [ ] Log aggregation
